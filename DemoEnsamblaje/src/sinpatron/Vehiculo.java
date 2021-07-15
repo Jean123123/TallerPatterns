@@ -5,20 +5,24 @@
  */
 package sinpatron;
 
+import conpatron.Decorator.IVehiculo;
+
 /**
  *
  * @author david_000
  */
-public class Vehiculo {
+public class Vehiculo implements IVehiculo{
    public String color;
    public boolean direccionAsistida;
    public String marca;
    public String modelo;
    public IMotor motor;
    public Carroceria tipoCarroceria;
-   
-   public String getPrestaciones(){
-       String n1 = "Prestaciones:\n";
+
+    @Override
+    public String getPrestaciones() {
+        
+        String n1 = "Prestaciones:\n";
        n1 += "El presente vehículo es un " + marca + "\n";
        n1 += "Estilo " + tipoCarroceria.tipoCarroceria + "\n";
        n1 += "Color: " + color + "\n";
@@ -26,7 +30,9 @@ public class Vehiculo {
        n1 += "Carrocería de " + tipoCarroceria.material + "\n";
        n1 += "Respuesta del motor: " + motor.InyectarCombustible(100) + "\n";
        
-       return n1;
-   }
+       return n1;   
+       
+    }
     
+  
 }

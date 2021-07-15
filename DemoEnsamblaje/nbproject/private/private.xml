@@ -3,11 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/david_000/Documents/NetBeansProjects/DemoEnsamblaje/src/sinpatron/Vehiculo.java</file>
-            <file>file:/C:/Users/david_000/Documents/NetBeansProjects/DemoEnsamblaje/src/sinpatron/MotorDiesel.java</file>
-            <file>file:/C:/Users/david_000/Documents/NetBeansProjects/DemoEnsamblaje/src/demoensamblaje/DemoEnsamblaje.java</file>
-            <file>file:/C:/Users/david_000/Documents/NetBeansProjects/DemoEnsamblaje/src/sinpatron/IMotor.java</file>
-            <file>file:/C:/Users/david_000/Documents/NetBeansProjects/DemoEnsamblaje/src/sinpatron/Carroceria.java</file>
+            <file>file:/C:/Users/adria/Documents/NetBeansProjects/TallerPatterns/DemoEnsamblaje/src/sinpatron/Vehiculo.java</file>
+            <file>file:/C:/Users/adria/Documents/NetBeansProjects/TallerPatterns/DemoEnsamblaje/src/conpatron/Decorator/IVehiculo.java</file>
+            <file>file:/C:/Users/adria/Documents/NetBeansProjects/TallerPatterns/DemoEnsamblaje/src/conpatron/Decorator/PantallaDecorator.java</file>
+            <file>file:/C:/Users/adria/Documents/NetBeansProjects/TallerPatterns/DemoEnsamblaje/src/conpatron/Decorator/RadioDecorator.java</file>
+            <file>file:/C:/Users/adria/Documents/NetBeansProjects/TallerPatterns/DemoEnsamblaje/src/conpatron/Decorator/CamaraDecorator.java</file>
+            <file>file:/C:/Users/adria/Documents/NetBeansProjects/TallerPatterns/DemoEnsamblaje/src/conpatron/Decorator/SensorDecorator.java</file>
         </group>
     </open-files>
 </project-private>
