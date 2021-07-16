@@ -5,6 +5,10 @@
  */
 package demoensamblaje;
 
+import conpatron.Decorator.Camara;
+import conpatron.Decorator.IVehiculo;
+import conpatron.Decorator.Radio;
+import conpatron.Decorator.Sensor;
 import sinpatron.*;
 
 /**
@@ -37,7 +41,7 @@ public class DemoEnsamblaje {
         v1.direccionAsistida = false;
         
         //Mostrar prestaciones del vehiculo
-        System.out.println(v1.getPrestaciones());
+        //System.out.println(v1.getPrestaciones());
 
 
         //--------------------------------------------------
@@ -61,18 +65,23 @@ public class DemoEnsamblaje {
         v2.direccionAsistida = true;
         
         //Mostrar prestaciones del vehiculo
-        System.out.println(v2.getPrestaciones());
+        //System.out.println(v2.getPrestaciones());
         
         //--------------------------------------------------
 
         //TODO: Agregar accesorios: radio y sensores de retro a v1
         //Debería agregar estos accesorios como parte de las prestaciones del vehiculo
-                
+        IVehiculo carroNuevo = new Sensor(new Radio(v1));
+        System.out.println(carroNuevo.getPrestaciones());
+        
         //Mostrar prestaciones actualizadas del vehiculo
         
         //--------------------------------------------------
         
         //TODO: Agregar accesorios: camara de retro a v2
+        
+        IVehiculo camara = new Camara(v2);
+        System.out.println(camara.getPrestaciones());
         //Debería agregar estos accesorios como parte de las prestaciones del vehiculo
         
         

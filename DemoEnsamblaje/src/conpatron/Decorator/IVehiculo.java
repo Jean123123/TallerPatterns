@@ -5,15 +5,14 @@
  */
 package conpatron.Decorator;
 
+
 /**
  *
  * @author adria
  */
 public interface IVehiculo {
     
-    /**
-     *
-     * @return 
-     */
+    
+    
     public String getPrestaciones();
 }

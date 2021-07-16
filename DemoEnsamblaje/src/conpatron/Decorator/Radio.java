@@ -7,19 +7,17 @@ package conpatron.Decorator;
 
 /**
  *
- * @author adria
+ * @author kenny
  */
-public abstract class VehiculoDecorator implements IVehiculo {
-    protected IVehiculo vehi;
-    
-    
-    public VehiculoDecorator(IVehiculo v){
-        this.vehi=v;
+public class Radio extends VehiculoDecorator {
+
+    public Radio(IVehiculo v) {
+        super(v);
     }
 
     @Override
     public String getPrestaciones() {
-        return vehi.getPrestaciones();
+        String nuevo = super.getPrestaciones() + "Se añadio radio con pantalla tactil \n";
+        return nuevo;
     }
-    
 }

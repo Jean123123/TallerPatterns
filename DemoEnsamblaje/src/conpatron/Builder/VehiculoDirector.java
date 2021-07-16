@@ -13,22 +13,22 @@ import sinpatron.Vehiculo;
  */
 public class VehiculoDirector {
 
-    private Vehiculo vehiculo;
+    private VehiculoBuilder builder;
     
-    public VehiculoDirector() {}
-    // --------------------------
+    public VehiculoDirector(VehiculoBuilder builder) {
+        this.builder=builder;
+    }
     
     public Vehiculo getVehiculo() {
-        return this.vehiculo;
+        return builder.getVehiculo();
     }
     // --------------------------
      public void contruirVehiculo( VehiculoBuilder builder )
     {
+        builder.definirMarcaModelo();
         builder.construirHabitaculo();
         builder.construirMotor();
-        builder.construirRuedas();
         builder.definirExtras();
-        builder.definirMarcaModelo();
     }
     
 }

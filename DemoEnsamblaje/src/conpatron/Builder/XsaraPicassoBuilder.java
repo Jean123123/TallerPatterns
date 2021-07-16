@@ -5,43 +5,44 @@
  */
 package conpatron.Builder;
 
+import sinpatron.Carroceria;
+import sinpatron.MotorDiesel;
+import sinpatron.Vehiculo;
+
 /**
  *
  * @author adria
  */
 public class XsaraPicassoBuilder extends VehiculoBuilder{
-    
-    public XsaraPicassoBuilder(){}
-    
-    // --------------------------
 
     @Override
     public void construirHabitaculo() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        vehiculo.tipoCarroceria= new Carroceria();
+        vehiculo.tipoCarroceria.tipoCarroceria="monovolumen";
+        vehiculo.tipoCarroceria.material="acero";
+        vehiculo.tipoCarroceria.habitaculoReforzado=false;
     }
     // --------------------------
 
     @Override
     public void construirMotor() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    // --------------------------
-
-    @Override
-    public void construirRuedas() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        vehiculo.motor= new MotorDiesel();
     }
     // --------------------------
 
     @Override
     public void definirExtras() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        vehiculo.direccionAsistida=false;
+        
     }
     // --------------------------
 
     @Override
     public void definirMarcaModelo() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        vehiculo = new Vehiculo();
+        vehiculo.marca= "Citroen";
+        vehiculo.modelo= "XsaraPicasso";
+        
     }
     
 }

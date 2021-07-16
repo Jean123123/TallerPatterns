@@ -19,14 +19,10 @@ public abstract class VehiculoBuilder {
         return this.vehiculo;
     }
     // ------------------------------
-     public void crearNuevoVehiculo() {
-        this.vehiculo = new Vehiculo();
-    }
-    // ------------------------------------
+
     // Métodos que deberán ser construídos por las clases que hereden de ésta
      public abstract void construirHabitaculo();
      public abstract void construirMotor();
-     public abstract void construirRuedas();
      public abstract void definirExtras();
      public abstract void definirMarcaModelo();
 

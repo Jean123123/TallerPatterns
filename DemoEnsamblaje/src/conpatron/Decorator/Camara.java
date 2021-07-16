@@ -7,19 +7,17 @@ package conpatron.Decorator;
 
 /**
  *
- * @author adria
+ * @author kenny
  */
-public abstract class VehiculoDecorator implements IVehiculo {
-    protected IVehiculo vehi;
-    
-    
-    public VehiculoDecorator(IVehiculo v){
-        this.vehi=v;
+public class Camara extends VehiculoDecorator {
+
+    public Camara(IVehiculo v) {
+        super(v);
     }
 
     @Override
     public String getPrestaciones() {
-        return vehi.getPrestaciones();
+        String nuevo = super.getPrestaciones()+ "Se añadio camara para retro \n";
+        return nuevo;
     }
-    
 }
